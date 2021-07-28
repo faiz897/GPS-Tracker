@@ -44,24 +44,24 @@ def direction(IP, name):
     return me, req_loc
 
 def main():
-	'''
-	Main function which can get the location by IP address and name of the location,
-	return the direction for the requested location from current location 
-	'''
-	# unpack the current location and requested location
-	me, req = direction("me", "Mumbai")
-	# assign the latitude and longitude in list
-	locations = [me, req]
+    '''
+    Main function which can get the location by IP address and name of the location,
+    return the direction for the requested location from current location 
+    '''
+    # unpack the current location and requested location
+    me, req = direction("me", "Mumbai")
+    # assign the latitude and longitude in list
+    locations = [me, req]
 
-	# setup the map
-	fig = gmaps.figure(map_type="ROADMAP")
-	# geting the directions from current location and desired location
-	directions = gmaps.directions_layer(me, req)
-	fig.add_layer(directions)
-	# View the map
-	fig
+    # setup the map
+    fig = gmaps.figure(map_type="ROADMAP")
+    # geting the directions from current location and desired location
+    directions = gmaps.directions_layer(me, req)
+    fig.add_layer(directions)
+    # View the map
+    fig
 
 if __name__ == '__main__':
-	# driver
-	main()
+    # driver
+    main()
 
