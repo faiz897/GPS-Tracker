@@ -27,7 +27,7 @@ def direction(IP, name):
     '''
     this function returns the latitude and longitude of direction location by IP address of device and name of the location 
     '''
-  	# geting the locaiton with ip
+    # geting the locaiton with ip
     me = location_IP("me")
     
     # acess the Google maps with google API key  
