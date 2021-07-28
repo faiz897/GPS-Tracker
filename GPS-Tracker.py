@@ -48,8 +48,10 @@ def main():
     Main function which can get the location by IP address and name of the location,
     return the direction for the requested location from current location 
     '''
+    # enter your desired location
+    loc = input('Enter the desired location: ')
     # unpack the current location and requested location
-    me, req = direction("me", "Mumbai")
+    me, req = direction("me", loc)
     # assign the latitude and longitude in list
     locations = [me, req]
 
